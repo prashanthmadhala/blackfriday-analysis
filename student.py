@@ -47,15 +47,16 @@ sns.set(color_codes=True)
 
 x = n1['Purchase']
 
-#sns.distplot(x)
+sns.distplot(x)
 
 mean = np.mean(x)
 median = np.median(x)
 
 #plotting the histogram of the purchase 
-sns.distplot(x, bins = 10, kde=False, rug=True)
+sns.distplot(x, bins = 15, kde=False, rug=True)
 
-"""We can find that the distribution is a left skewed distribution where 
-mean (11908.914) and median(11886.5) are close to each other"""
+"""We can find that the distribution is slightly skewed to the left where
+mean (11908.914) and median(11886.5) are close to each other""" 
+
 
 
